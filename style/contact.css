@@ -1,0 +1,120 @@
+/*********** MOBILSITE **********/
+.contact-container {
+  background-color: #bec0aa;
+  padding: 30px 30px;
+  max-width: 100%;
+  justify-content: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #e7dcd1;
+  border-radius: 5px;
+  background-color: #e7dcd1;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 90%;
+}
+
+button {
+  background-color: #e7dcd1;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 95%;
+}
+
+button:hover {
+  background-color: #d9d0c7;
+}
+/********** WEBSITE ***********/
+@media (min-width: 600px) {
+  .contact-container {
+    background-color: #bec0aa;
+    padding: 20px 30px;
+    width: 700px;
+    max-width: 100%;
+    justify-content: center;
+    margin-left: 22rem;
+    position: relative;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e7dcd1;
+    border-radius: 5px;
+    background-color: #e7dcd1;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 96.5%;
+  }
+
+  button {
+    background-color: #e7dcd1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #d9d0c7;
+  }
+}
+
+/*********** STYLE *********/
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h2 {
+  text-align: center;
+  margin-top: 4rem;
+  font-family: "Alegreya";
+  font-weight: 400;
+}
+p {
+  text-align: center;
+  font-family: "Gentium Book Plus", serif;
+}

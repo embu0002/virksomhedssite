@@ -1,0 +1,49 @@
+/************************* FONTS ****************************/
+
+/* <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+font-family: "Alegreya";
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+font-family: "Gentium Book Plus", serif; */
+
+body {
+  background-color: #ebe4dd;
+}
+
+header {
+  background-color: #bec0aa;
+  padding: 10px 10px;
+}
+
+/************* MENUBAR ************/
+.navbar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+a {
+  padding: 1rem;
+  margin-inline: 3rem;
+  text-decoration: solid;
+  color: #000000;
+  font-weight: 100;
+  font-size: 1.2rem;
+  font-family: "Alegreya";
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Alegreya";
+  font-weight: 400;
+}
