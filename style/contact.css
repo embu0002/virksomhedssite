@@ -48,6 +48,7 @@ button {
 button:hover {
   background-color: #d9d0c7;
 }
+
 /********** WEBSITE ***********/
 @media (min-width: 600px) {
   .contact-container {
@@ -56,7 +57,7 @@ button:hover {
     width: 700px;
     max-width: 100%;
     justify-content: center;
-    margin-left: 22rem;
+    margin-inline: auto;
     position: relative;
   }
 
@@ -113,8 +114,17 @@ h2 {
   margin-top: 4rem;
   font-family: "Alegreya";
   font-weight: 400;
+  font-size: 1.7rem;
 }
 p {
   text-align: center;
   font-family: "Gentium Book Plus", serif;
+  font-size: 1.2rem;
+}
+
+.map_container {
+  display: flex; /* Brug flexbox til nem centreringsstyring */
+  justify-content: center; /* Centrerer horisontalt */
+  align-items: center;
+  margin-top: 1.5rem;
 }
