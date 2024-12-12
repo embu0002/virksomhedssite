@@ -20,7 +20,7 @@ header {
 }
 
 /************* MENUBAR ************/
-.navbar {
+/* .navbar {
   display: flex;
   align-items: center;
   list-style: none;
@@ -46,4 +46,4 @@ h1 {
   margin-bottom: 2rem;
   font-family: "Alegreya";
   font-weight: 400;
-}
+} */
