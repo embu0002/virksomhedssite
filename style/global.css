@@ -14,12 +14,6 @@ body {
   background-color: #ebe4dd;
 }
 
-header {
-  background-color: #bec0aa;
-  padding: 10px 10px;
-}
-
-/************* MENUBAR ************/
 /* .navbar {
   display: flex;
   align-items: center;
@@ -47,3 +41,312 @@ h1 {
   font-family: "Alegreya";
   font-weight: 400;
 } */
+
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***** grenerelt ****/
+main {
+  background-color: #ebe4dd;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+/***** style *******/
+/* 
+h1:
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+.alegreya-<uniquifier> {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h2: 
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+.gentium-book-plus-regular {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p: 
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Hind+Madurai:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+.hind-madurai-regular {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+Farver: 
+Menu: #BEC0AA
+Tekst: #000000
+Baggrund: #EBE4DD
+Footer: #C5B5A6
+*/
+
+/*************** Menu ****************/
+
+/******* link til head **************
+
+    <script src="https://kit.fontawesome.com/7a9f1b8d38.js" crossorigin="anonymous"></script>
+    
+    */
+
+/********* header html **************
+
+    <header>
+        <div class="logo2">
+            <a href="index.html"><img src="billeder/logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div class="menu">
+                <a href="booking.html">Sessions</a>
+                <a href="workshop.html">Workshop</a>
+                <a href="shop.html">Shop</a>
+                <div class="logo">
+                    <a href="index.html"><img src="billeder/logo.svg" alt="logo"></a>
+                </div>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    */
+
+header {
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #bec0aa;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .logo img {
+    width: 100px;
+    height: 90px;
+  }
+  .logo2 {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 40px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #000022;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-size: 1.2rem;
+}
+
+.menu a:hover {
+  color: #e2e8dd;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000022;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 16px;
+  }
+  nav {
+    justify-content: end;
+  }
+  header {
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .logo2 img {
+    width: 70px;
+    height: auto;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #bec0aa;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  nav.active .menu li {
+    margin: 30px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/******** footer *********/
+/************* html footer ***********
+   <footer class="footer">
+        <div>
+            <img class="logofoot" src="billeder/logo.svg" alt="logo">
+        </div>
+        <div class="grid_3">
+            <div class="grid_1">
+                <div class="grid-1-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="foottekst">Møllerlodden 7, 2400 København</p>
+                </div>
+                <div class="grid_2">
+                    <a href="https://www.instagram.com/kimia.healing.space/" class="fa-brands fa-instagram fa-lg"></a>
+                    <a href="https://www.facebook.com/Kimiahealingspace" class="fa-brands fa-facebook fa-lg"></a>
+                </div>
+            </div>
+            <div class="grid-1-1">
+                <i class="fa-regular fa-envelope"></i>
+                <p class="foottekst">Healingspacekimia@gmail.com</p>
+            </div>
+
+        </div>
+        <div class="footer-section tekst">
+            <p class="foottekst">Drop in opening hours <br> Wednesday & Thursday <br> 15 - 19</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+*/
+
+footer {
+  background-color: #c5b5a6;
+  height: 150px;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #d0c4b0; /* Footer baggrundsfarve */
+  color: #000;
+}
+
+.logofoot {
+  margin-bottom: 0px;
+  height: 105px;
+  width: 100px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+.tekst {
+  text-align: center;
+}
+.grid-1-1 {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.foottekst {
+  font-family: "Alegreya", serif;
+  font-style: normal;
+}
+
+.grid_3 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 800px) {
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 17px;
+    align-items: center;
+  }
+}
