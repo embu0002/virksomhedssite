@@ -1,0 +1,137 @@
+/*********** MOBILSITE **********/
+.calender-container {
+  background-color: #bec0aa;
+  padding: 30px 30px;
+  max-width: 100%;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.calender {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #e7dcd1;
+  border-radius: 5px;
+  background-color: #e7dcd1;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 90%;
+}
+
+button {
+  background-color: #e7dcd1;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 50%;
+}
+
+button:hover {
+  background-color: #d9d0c7;
+}
+
+/********** WEBSITE ***********/
+@media (min-width: 600px) {
+  .calender-container {
+    background-color: #bec0aa;
+    padding: 20px 30px;
+    width: 800px;
+    max-width: 100%;
+    justify-content: center;
+    margin-inline: auto;
+    position: relative;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .form-row {
+    display: grid;
+    gap: 10px;
+    padding: 12px;
+  }
+  .calender {
+    display: grid;
+    gap: 20px;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #e7dcd1;
+    border-radius: 5px;
+    background-color: #e7dcd1;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 96.5%;
+  }
+
+  button {
+    background-color: #e7dcd1;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #d9d0c7;
+  }
+  .date {
+    margin-top: 0.2rem;
+    font-family: "Alegreya";
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+/*********** STYLE *********/
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+p {
+  text-align: center;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 1.2rem;
+}
+.date {
+  margin-top: 0.2rem;
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-size: 1rem;
+}
