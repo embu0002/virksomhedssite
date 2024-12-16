@@ -109,6 +109,8 @@ h1 {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 3rem;
+  font-family: "Alegreya", serif;
+  font-weight: 400;
 }
 h2 {
   text-align: center;
@@ -124,8 +126,8 @@ p {
 }
 
 .map_container {
-  display: flex; /* Brug flexbox til nem centreringsstyring */
-  justify-content: center; /* Centrerer horisontalt */
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
 }
