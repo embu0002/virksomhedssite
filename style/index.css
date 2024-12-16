@@ -18,6 +18,35 @@ img {
 */
 
 /******Generelt********/
+h1 {
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Gentium Book Plus", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+p {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .farve {
   background-color: #ebe4dd;
@@ -31,17 +60,14 @@ img {
 .hero {
   background-color: #bec0aa;
   display: flex;
-  /* grid-template-columns: 1fr 2fr 1fr; /* Juster kolonneforhold */
-  /*grid-template-rows: auto; */
   gap: 4rem;
   justify-content: space-around;
-  /* align-items: center; */
 }
 
 .hero_tekst {
   line-height: 1;
   font-size: 1rem;
-  margin-top: 4.85rem; /* Juster for bedre spacing */
+  margin-top: 8.5rem; /* Juster for bedre spacing */
   margin-left: 2rem;
   margin-bottom: -6rem;
 }
@@ -114,6 +140,9 @@ img {
   max-width: 190px;
   margin-inline: auto;
   text-align: center;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
 }
 
 .grid-1_1 {
@@ -151,7 +180,7 @@ img {
   .hero_tekst {
     line-height: 1;
     font-size: 2rem;
-    margin-top: 6.5rem; /* Juster for bedre spacing */
+    margin-top: 10rem; /* Juster for bedre spacing */
     margin-left: 2rem;
     margin-bottom: -6rem;
   }

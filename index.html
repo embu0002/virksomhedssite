@@ -7,16 +7,53 @@
     <title>Forside</title>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/global.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Hind+Madurai:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7a9f1b8d38.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="logo2">
+            <a href="index.html"><img src="billeder/logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div class="menu">
+                <a href="booking.html">Sessions</a>
+                <a href="workshop.html">Workshop</a>
+                <a href="shop.html">Shop</a>
+                <div class="logo">
+                    <a href="index.html"><img src="billeder/logo.svg" alt="logo"></a>
+                </div>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+
     <main>
         <div class="hero">
             <div class="hero_tekst">
-                <h1>KIMIA</h1>
-                <h1>HEALING</h1>
-                <h1>SPACE</h1>
+                <h1>KIMIA
+                    <br>HEALING
+                    <br>SPACE
+                </h1>
             </div>
             <div class="container_grid">
                 <div class="hero_lottie">
@@ -26,7 +63,7 @@
                         background="transparent" speed="1" loop autoplay></dotlottie-player>
                 </div>
                 <div class="hero_billede">
-                    <img src="img/hero.png" alt="hero">
+                    <img src="img/hero.jpg" alt="hero">
                 </div>
             </div>
         </div>
@@ -45,9 +82,9 @@
             </div>
 
             <div class="oversigt">
-                <img src="img/baggrund.png" class="bgbillede" alt="baggrund">
+                <img src="img/sunset_forside.webp" class="bgbillede" alt="baggrund">
                 <div class="oversigt_tekst">
-                    <h3>Kimia offers</h3>
+                    <h3>KIMIA OFFERS</h3>
                     <div class="grid-1_1_1">
                         <div>
                             <h4>Healing</h4>
@@ -83,13 +120,39 @@
                         choosing yourself, in my eyes, is the most beautiful and important revolution.</p>
                 </div>
 
-                <img class="tak_bg" src="img/meditation.png" alt="Tak">
+                <img class="tak_bg" src="img/tak.jpg" alt="Tak">
 
             </div>
 
         </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div>
+            <img class="logofoot" src="billeder/logo.svg" alt="logo">
+        </div>
+        <div class="grid_3">
+            <div class="grid_1">
+                <div class="grid-1-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="foottekst">Møllerlodden 7, 2400 København</p>
+                </div>
+                <div class="grid_2">
+                    <a href="https://www.instagram.com/kimia.healing.space/" class="fa-brands fa-instagram fa-lg"></a>
+                    <a href="https://www.facebook.com/Kimiahealingspace" class="fa-brands fa-facebook fa-lg"></a>
+                </div>
+            </div>
+            <div class="grid-1-1">
+                <i class="fa-regular fa-envelope"></i>
+                <p class="foottekst">Healingspacekimia@gmail.com</p>
+            </div>
+
+        </div>
+        <div class="footer-section tekst">
+            <p class="foottekst">Drop in opening hours <br> Wednesday & Thursday <br> 15 - 19</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
