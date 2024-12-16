@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/******FARVER********/
+/* 
+#ebe4dd Baggrundsfarve
+#c5b5a6 Footer farve
+#bec0aa Hero farve
+#f1eded Oversigt farve
+*/
+
+/******Generelt********/
+
+.farve {
+  background-color: #ebe4dd;
+}
+
+.footer {
+  background-color: #c5b5a6;
+}
+
+/******HERO********/
+.hero {
+  background-color: #bec0aa;
+  display: flex;
+  /* grid-template-columns: 1fr 2fr 1fr; /* Juster kolonneforhold */
+  /*grid-template-rows: auto; */
+  gap: 4rem;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.hero_tekst {
+  line-height: 1;
+  font-size: 1rem;
+  margin-top: 4.85rem; /* Juster for bedre spacing */
+  margin-left: 2rem;
+  margin-bottom: -6rem;
+}
+
+.container_grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero_lottie {
+  display: none;
+}
+
+.hero_billede {
+  position: relative; /* Tillader overlap */
+  z-index: 2; /* Sørg for, at den er foran */
+  width: 200px;
+  height: auto;
+}
+
+.oversigt_tekst {
+  background-color: #e2d4c7;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.center {
+  display: grid;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/********OVERSIGT*******/
+.oversigt {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 80px 80px auto 80px;
+}
+
+.bgbillede {
+  grid-column: 1/4;
+  grid-row: 3/5;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.oversigt_tekst {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+
+.tak_bg {
+  width: 70%;
+}
+
+/******KNAP********/
+.knap {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #bec0aa;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: grid;
+  max-width: 190px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.grid-1_1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  align-items: center;
+  max-width: 75%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 45px;
+}
+
+.grid-1_1 div {
+  max-width: 65ch;
+}
+
+.grid-1_1_1 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+@media (min-width: 600px) {
+  .oversigt {
+    grid-template-rows: 80px 80px 0.3fr 80px;
+  }
+
+  .grid-1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .hero_tekst {
+    line-height: 1;
+    font-size: 2rem;
+    margin-top: 6.5rem; /* Juster for bedre spacing */
+    margin-left: 2rem;
+    margin-bottom: -6rem;
+  }
+
+  .hero_billede {
+    width: 300px;
+  }
+
+  .hero_lottie {
+    position: absolute;
+    display: block;
+    width: 50%;
+    left: -48%;
+    top: 5%;
+    z-index: 2;
+  }
+}
