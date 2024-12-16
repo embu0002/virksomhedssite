@@ -42,7 +42,7 @@ button {
   font-size: 16px;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
-  width: 95%;
+  width: 90%;
 }
 
 button:hover {
@@ -84,7 +84,7 @@ button:hover {
   textarea {
     resize: none;
     height: 80px;
-    width: 96.5%;
+    width: 99.5%;
   }
 
   button {
@@ -108,6 +108,7 @@ button:hover {
 h1 {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 h2 {
   text-align: center;

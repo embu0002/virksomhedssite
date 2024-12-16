@@ -1,18 +1,18 @@
-.construction_page {
+.clientdetail_page {
   background-color: #c5b5a6;
   text-align: center;
   padding-block: 4rem;
 }
 
 main {
-  margin-inline: 9rem;
+  margin-inline: 15rem;
   margin-top: 3.5rem;
 }
 
-.construction_text {
+.clientdetail_text {
   font-family: "Alegreya";
   font-weight: 400;
-  padding-block: 4rem;
+  padding-block: 1rem;
 }
 
 footer {
