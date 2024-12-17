@@ -14,3 +14,7 @@ main {
   font-weight: 400;
   padding-block: 4rem;
 }
+
+header {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}

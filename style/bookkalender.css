@@ -1,4 +1,7 @@
 /*********** MOBILSITE **********/
+header {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
 .calender-container {
   background-color: #bec0aa;
   padding: 30px 30px;
