@@ -1,0 +1,397 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ebe4dd;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #bec0aa;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .logo img {
+    width: 100px;
+    height: 90px;
+  }
+  .logo2 {
+    display: none;
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 40px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #000022;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-size: 1.2rem;
+}
+
+.menu a:hover {
+  color: #e2e8dd;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000022;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 16px;
+  }
+  nav {
+    justify-content: end;
+  }
+  header {
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .logo2 img {
+    width: 70px;
+    height: auto;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #bec0aa;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  nav.active .menu li {
+    margin: 30px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+.filter {
+  width: 100%;
+  text-align: center;
+  background-color: #ebe4dd;
+  font-family: "Gentium Book Plus", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(21, 20, 20);
+  padding: 20px 0;
+  box-sizing: border-box; /* Sørger for at padding ikke påvirker bredden */
+  margin: 0; /* Fjerner eventuelle marger */
+}
+
+@media (max-width: 768px) {
+  .filter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 769px) {
+  .filter {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+footer {
+  background-color: #c5b5a6;
+  height: 40px;
+}
+
+h1 {
+  padding: 20px;
+  background-color: #ebe4dd;
+  text-align: center;
+  margin: 0;
+  font-size: 40px; /* Juster fontstørrelsen hvis nødvendig */
+}
+
+h2 {
+  margin: 0;
+  font-size: 20px; /* Juster fontstørrelsen hvis nødvendig */
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  padding: 60px;
+  background-color: #e7dcd1;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 769px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.item img {
+  width: 300%;
+  max-width: 250px;
+
+  display: block;
+  transition: opacity 0.3s ease;
+}
+.item:hover img {
+  opacity: 0.5;
+}
+
+.item h3 {
+  margin: 8px;
+  font-size: 16px;
+  color: #333;
+}
+.item button {
+  background-color: #bec0aa;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+a.button {
+  display: inline-block;
+  /* Sørger for at knappen alltid ligger over */
+  background-color: #bec0aa;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+
+  /*top: 100px;
+  background-color: #bec0aa;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;*/
+}
+
+a.button:hover {
+  background-color: #eeedc9; /* Endre farge ved hover, tilsvarende knapp */
+}
+
+.item .hover-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 60%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  color: rgb(29, 28, 28);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 14px;
+  padding: 0px;
+  border-radius: 20px;
+  z-index: 2;
+}
+.item:hover .hover-text {
+  opacity: 1;
+}
+.item-content {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 800px) {
+  .overskrift {
+    padding-top: 40px;
+    padding-bottom: 75px;
+  }
+  .grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* box */
+  .box {
+    background-color: #e7dcd1;
+  }
+  .box1 {
+    padding-right: 80px;
+  }
+  .box2 {
+    padding-left: 80px;
+  }
+
+  .text-box {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .text {
+    padding-left: 20px;
+  }
+  .order {
+    order: 1;
+  }
+
+  .boxes {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .padbox {
+    padding-bottom: 22px;
+  }
+}
+
+/******** footer *********/
+footer {
+  background-color: #c5b5a6;
+  height: 150px;
+  font-family: "Alegreya", serif;
+  font-style: normal;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #d0c4b0; /* Footer baggrundsfarve */
+  color: #000;
+}
+
+.logofoot {
+  margin-bottom: 0px;
+  height: 105px;
+  width: 100px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+.tekst {
+  text-align: center;
+}
+.grid-1-1 {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.foottekst {
+  font-family: "Alegreya", serif;
+  font-style: normal;
+}
+
+.grid_3 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 800px) {
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 17px;
+    align-items: center;
+  }
+}
